@@ -164,6 +164,9 @@
   .m-auto {
     margin: auto;
   }
+  .ml-\[16px\] {
+    margin-left: 16px;
+  }
   .flex {
     display: flex;
   }
@@ -195,6 +198,12 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
   .text-\[48px\] {
     font-size: 48px;
   }
@@ -208,6 +217,41 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:m-auto {
+    @media (width >= 48rem) {
+      margin: auto;
+    }
+  }
+  .md\:mr-\[60px\] {
+    @media (width >= 48rem) {
+      margin-right: 60px;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
+  .md\:text-\[38px\] {
+    @media (width >= 48rem) {
+      font-size: 38px;
+    }
+  }
+  .md\:text-\[38\] {
+    @media (width >= 48rem) {
+      color: 38;
+    }
   }
 }
 @property --tw-border-style {
