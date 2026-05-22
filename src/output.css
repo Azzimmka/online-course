@@ -170,6 +170,15 @@
   .table {
     display: table;
   }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[155px\] {
+    height: 155px;
+  }
+  .w-full {
+    width: 100%;
+  }
   .max-w-\[1300px\] {
     max-width: 1300px;
   }
