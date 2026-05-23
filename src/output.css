@@ -169,17 +169,17 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
+  .mb-\[20px\] {
+    margin-bottom: 20px;
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
   }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
   .ml-\[16px\] {
     margin-left: 16px;
-  }
-  .flex {
-    display: flex;
   }
   .table {
     display: table;
@@ -193,17 +193,8 @@
   .h-\[236px\] {
     height: 236px;
   }
-  .h-\[272px\] {
-    height: 272px;
-  }
   .w-\[358px\] {
     width: 358px;
-  }
-  .w-\[630\] {
-    width: 630;
-  }
-  .w-\[630px\] {
-    width: 630px;
   }
   .w-full {
     width: 100%;
@@ -217,11 +208,11 @@
   .resize {
     resize: both;
   }
-  .flex-col {
-    flex-direction: column;
-  }
   .gap-\[100px\] {
     gap: 100px;
+  }
+  .rounded-\[12px\] {
+    border-radius: 12px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -236,23 +227,14 @@
   .pt-\[24px\] {
     padding-top: 24px;
   }
-  .pt-\[30\] {
-    padding-top: 30;
-  }
   .pt-\[30px\] {
     padding-top: 30px;
   }
-  .pt-\[40px\] {
-    padding-top: 40px;
+  .pb-\[10px\] {
+    padding-bottom: 10px;
   }
   .pb-\[20px\] {
     padding-bottom: 20px;
-  }
-  .pb-\[24px\] {
-    padding-bottom: 24px;
-  }
-  .pl-\[16px\] {
-    padding-left: 16px;
   }
   .pl-\[40px\] {
     padding-left: 40px;
@@ -268,9 +250,6 @@
   }
   .text-\[28px\] {
     font-size: 28px;
-  }
-  .text-\[48px\] {
-    font-size: 48px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -313,6 +292,16 @@
       margin-bottom: 80px;
     }
   }
+  .md\:mb-\[117px0\] {
+    @media (width >= 48rem) {
+      margin-bottom: 117px0;
+    }
+  }
+  .md\:mb-\[117px\] {
+    @media (width >= 48rem) {
+      margin-bottom: 117px;
+    }
+  }
   .md\:ml-0 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 0);
@@ -343,19 +332,19 @@
       justify-content: space-between;
     }
   }
-  .md\:gap-\[20px\] {
+  .md\:rounded-\[12px\] {
     @media (width >= 48rem) {
-      gap: 20px;
-    }
-  }
-  .md\:pt-0 {
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 0);
+      border-radius: 12px;
     }
   }
   .md\:pt-\[40px\] {
     @media (width >= 48rem) {
       padding-top: 40px;
+    }
+  }
+  .md\:pb-\[10px\] {
+    @media (width >= 48rem) {
+      padding-bottom: 10px;
     }
   }
   .md\:pb-\[20px\] {
@@ -376,11 +365,6 @@
   .md\:text-\[38px\] {
     @media (width >= 48rem) {
       font-size: 38px;
-    }
-  }
-  .md\:text-\[38\] {
-    @media (width >= 48rem) {
-      color: 38;
     }
   }
 }
