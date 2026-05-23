@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
@@ -166,8 +167,20 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
   .mt-\[50px\] {
     margin-top: 50px;
+  }
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
+  }
+  .mb-\[10px\] {
+    margin-bottom: 10px;
   }
   .mb-\[20px\] {
     margin-bottom: 20px;
@@ -184,11 +197,26 @@
   .ml-\[16px\] {
     margin-left: 16px;
   }
+  .ml-\[30px\] {
+    margin-left: 30px;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-324 {
+    height: calc(var(--spacing) * 324);
+  }
   .h-\[23px\] {
     height: 23px;
+  }
+  .h-\[49px\] {
+    height: 49px;
   }
   .h-\[100px\] {
     height: 100px;
@@ -211,6 +239,18 @@
   .h-\[257px\] {
     height: 257px;
   }
+  .h-\[324px\] {
+    height: 324px;
+  }
+  .h-\[330px\] {
+    height: 330px;
+  }
+  .w-103 {
+    width: calc(var(--spacing) * 103);
+  }
+  .w-\[103px\] {
+    width: 103px;
+  }
   .w-\[358px\] {
     width: 358px;
   }
@@ -229,8 +269,23 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .gap-\[100px\] {
     gap: 100px;
+  }
+  .rounded-\[6px\] {
+    border-radius: 6px;
   }
   .rounded-\[12px\] {
     border-radius: 12px;
@@ -242,8 +297,53 @@
   .bg-\[\#E4E4E7\] {
     background-color: #E4E4E7;
   }
+  .bg-\[\#FF9500\] {
+    background-color: #FF9500;
+  }
+  .bg-\[url\.\(\)\] {
+    background-color: url.();
+  }
+  .bg-\[url\.9\] {
+    background-color: url.9;
+  }
+  .bg-\[url\.\] {
+    background-color: url.;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\/\)\] {
+    background-image: url(/);
+  }
+  .bg-\[url\(\/im\)\] {
+    background-image: url(/im);
+  }
+  .bg-\[url\(\/ima\)\] {
+    background-image: url(/ima);
+  }
+  .bg-\[url\(\/images\)\] {
+    background-image: url(/images);
+  }
+  .bg-\[url\(\/images\/\)\] {
+    background-image: url(/images/);
+  }
+  .bg-\[url\(\/images\/AbstractDesign\.svg\)\] {
+    background-image: url(/images/AbstractDesign.svg);
+  }
+  .bg-\[url\(\/img\)\] {
+    background-image: url(/img);
+  }
+  .bg-bottom-left {
+    background-position: left bottom;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .pt-\[24px\] {
     padding-top: 24px;
@@ -285,6 +385,15 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .text-\[\#FF9500\] {
+    color: #FF9500;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -312,6 +421,11 @@
       margin-right: 60px;
     }
   }
+  .md\:mr-\[80px\] {
+    @media (width >= 48rem) {
+      margin-right: 80px;
+    }
+  }
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -332,9 +446,19 @@
       margin-bottom: 117px;
     }
   }
+  .md\:mb-\[150px\] {
+    @media (width >= 48rem) {
+      margin-bottom: 150px;
+    }
+  }
   .md\:ml-0 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:ml-\[80px\] {
+    @media (width >= 48rem) {
+      margin-left: 80px;
     }
   }
   .md\:flex {
@@ -357,14 +481,29 @@
       height: 275px;
     }
   }
+  .md\:h-\[323px\] {
+    @media (width >= 48rem) {
+      height: 323px;
+    }
+  }
   .md\:w-\[630px\] {
     @media (width >= 48rem) {
       width: 630px;
     }
   }
+  .md\:w-\[1300px\] {
+    @media (width >= 48rem) {
+      width: 1300px;
+    }
+  }
   .md\:flex-col {
     @media (width >= 48rem) {
       flex-direction: column;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
   .md\:items-center {
@@ -415,6 +554,11 @@
   .md\:text-\[38px\] {
     @media (width >= 48rem) {
       font-size: 38px;
+    }
+  }
+  .md\:text-\[48px\] {
+    @media (width >= 48rem) {
+      font-size: 48px;
     }
   }
 }
